@@ -1,0 +1,50 @@
+body {
+	font-family: 'Fira Mono', monospace;
+	font-size: 16px;
+	line-height: 1.8;
+	margin: 0;
+}
+
+#output {
+	border: 1px solid rgba(0, 0, 0, .4);
+	margin: 20px;
+	padding: 20px;
+}
+
+.output-line {
+	padding: 10px 0;
+}
+
+.output-line:not(:last-child) {
+	border-bottom: 1px solid #DDD;
+}
+
+.output-column {
+	display: inline-block;
+	margin: 0;
+}
+
+.output-line .output-column:not(:last-child) {
+	margin-right: 20px;
+}
+
+.string {
+	color: #393;
+}
+
+.number {
+	color: #33D;
+}
+
+.boolean {
+	color: #933;
+}
+
+.undefined, .null {
+	color: #999;
+	font-style: italic;
+}
+
+.symbol {
+
+}
