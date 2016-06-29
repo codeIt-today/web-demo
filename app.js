@@ -13,6 +13,8 @@ console.log = function () {
 
 		if (argType === 'undefined') {
 			outputString = 'undefined'
+		} else if (Array.isArray(arg)) {
+			outputString = JSON.stringify(arg)
 		} else if (argType === 'object') {
 			outputString = JSON.stringify(arg, null, 2)
 		} else {
@@ -29,3 +31,5 @@ console.log = function () {
 	outputElement.innerHTML += `<div class="output-line">${buffer}</div>`
 	log.apply(this, arguments)
 }
+
+window.console.log = console.log
