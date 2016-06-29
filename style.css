@@ -5,6 +5,42 @@ body {
 	margin: 0;
 }
 
+#tools {
+	position: fixed;
+	background: #FAFAFA;
+	width: 100%;
+	bottom: 0;
+	border-top: 1px solid #EEE;
+	padding: 20px;
+}
+
+#tools button {
+	border-radius: 5px;
+	background: #9C9;
+	box-shadow: 0 4px #7A7;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: 'Fira Mono';
+	letter-spacing: 1px;
+	min-width: 90px;
+	height: 40px;
+	position: relative;
+	outline: 0;
+}
+
+#tools button:hover {
+	box-shadow: 0 5px #7A7;
+	top: -1px;
+}
+
+#tools button:active {
+	box-shadow: 0 2px #7A7;
+	background: #90C090;
+	top: 3px;
+}
+
 #output {
 	border: 1px solid rgba(0, 0, 0, .4);
 	margin: 20px;

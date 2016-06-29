@@ -1,6 +1,8 @@
 const log = console.log
 const outputElement = document.getElementById('output')
 
+const clearBtn = document.getElementById('clear')
+
 console.log = function () {
 	const len = arguments.length
 	let buffer = ''
@@ -30,6 +32,10 @@ console.log = function () {
 
 	outputElement.innerHTML += `<div class="output-line">${buffer}</div>`
 	log.apply(this, arguments)
+}
+
+clearBtn.onclick = function () {
+	outputElement.innerHTML = ''
 }
 
 window.console.log = console.log
