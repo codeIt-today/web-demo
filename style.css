@@ -6,28 +6,28 @@ body {
 }
 
 #tools {
-	position: fixed;
 	background: #FAFAFA;
-	width: 100%;
-	bottom: 0;
 	border-top: 1px solid #EEE;
+	bottom: 0;
 	padding: 20px;
+	position: fixed;
+	width: 100%;
 }
 
 #tools button {
-	border-radius: 5px;
 	background: #9C9;
-	box-shadow: 0 4px #7A7;
+	border-radius: 5px;
 	border: 0;
+	box-shadow: 0 4px #7A7;
 	color: white;
 	cursor: pointer;
-	font-size: 15px;
 	font-family: 'Fira Mono';
+	font-size: 15px;
+	height: 40px;
 	letter-spacing: 1px;
 	min-width: 90px;
-	height: 40px;
-	position: relative;
 	outline: 0;
+	position: relative;
 }
 
 #tools button:hover {
@@ -36,8 +36,8 @@ body {
 }
 
 #tools button:active {
-	box-shadow: 0 2px #7A7;
 	background: #90C090;
+	box-shadow: 0 2px #7A7;
 	top: 3px;
 }
 
